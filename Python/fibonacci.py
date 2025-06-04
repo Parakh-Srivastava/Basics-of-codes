@@ -7,6 +7,4 @@ for i in range(0,a-2):
     d = b + c
     print(d)
     b = c
-    c = d
-
-    
+    c = d 
