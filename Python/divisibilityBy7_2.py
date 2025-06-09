@@ -1,4 +1,4 @@
-num = int(input())
+num = int(input("Enter the number :"))
 if(num % 7 == 0 or num % 2 == 0):
     if(num % 7 == 0 and num % 2 != 0):
         print(num, " is divisible by 7.")
