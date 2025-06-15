@@ -5,6 +5,7 @@ if(array == array2):
     print(array, "is a palindrome.")
 else:
     print(array, "is not a palindrome")
+#Now this is another program to count and sort
 array3 = ["C", "D", "A", "A", "B", "B", "A"]
 print(array3.count('A'))
 array3.sort()
