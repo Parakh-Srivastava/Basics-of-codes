@@ -1,7 +1,0 @@
-name=input("Enter your first name :")
-print("there are", len(name), "letters in your first name.")
-print(name.replace('a','@'))
-print(name.capitalize())
-print(name.count('a'))
-print(name.endswith(input()))
-print(name.find(input()))
