@@ -19,9 +19,16 @@ int main()
 		area = length*breadth;
 		printf("The area of rectangle is (%.2f * %.2f) = %.2f.", length, breadth, area);
 	}
+	else if(shape[0] == 'c' || shape[0] == 'C')
+	{
+		printf("Enter the radius of the circle : ");
+		scanf("%f", &radius);
+		area = 3.14 * radius * radius;
+		printf("The area of circle of radius %.2f = %.2f.", radius, area);
+	}
 	else
 	{
-		printf("Only shape we can do right now are Square and Rectangle!");
+		printf("Only shape we can do right now are Circle, Square and Rectangle!");
 	}
 	return 0;
 }
