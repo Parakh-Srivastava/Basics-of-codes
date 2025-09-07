@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 void main()
 {
+	// Seed the random number generator with the current time
+	srand(time(NULL));
 	int ans, guess, counter, min, max;
 	int win_condition = 1;
 	min = 1;
