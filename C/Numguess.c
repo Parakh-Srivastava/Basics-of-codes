@@ -18,7 +18,7 @@ void main()
 		scanf("%d", &guess);
 		if(guess == ans)
 		{
-			printf("Touch some grass nigga !!");
+			printf("You win!!");
 			win_condition = 0;
 			break;
 		}
