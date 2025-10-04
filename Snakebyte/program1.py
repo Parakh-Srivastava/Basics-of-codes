@@ -6,8 +6,8 @@ item = {
 }
 
 bought_item = []
-ch = True
-while ch == True:
+
+while True:
     i = input("Enter a vegetable : (from items) : ")
     if i.lower() in item.keys():
       bought_item.append(i)
@@ -15,7 +15,7 @@ while ch == True:
       print("not in list !!")
     Yn = input("Do you wish for anything else ? ")
     if Yn[0].lower() == 'n':
-       ch = False
+       break
     
 totalp = 0
 
@@ -24,5 +24,5 @@ for j in range(len(bought_item)):
    
    totalp +=  item[bought_item[j]]
    print(bought_item[j], " : ", item[bought_item[j]])
-TGST = totalp * 1.05
+TGST = totalp*1.05
 print(f"Total price (with 5 GST) = {TGST:.2f}")
