@@ -6,7 +6,6 @@ item = {
 }
 
 bought_item = []
-print(type(item.keys()))
 ch = True
 while ch == True:
     i = input("Enter a vegetable : (from items) : ")
@@ -25,5 +24,5 @@ for j in range(len(bought_item)):
    
    totalp +=  item[bought_item[j]]
    print(bought_item[j], " : ", item[bought_item[j]])
-TGST = totalp*1.05
-print(f"Total price (with 5 GST) = {TGST}")
+TGST = totalp * 1.05
+print(f"Total price (with 5 GST) = {TGST:.2f}")
