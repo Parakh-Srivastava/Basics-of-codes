@@ -5,6 +5,7 @@ int main()
 	float side, area = 0, length, breadth, radius;
 	printf("Enter the shape of which you wanna take out the area : ");
 	scanf("%s", &shape);
+	/*& means adress Eg here scanf &shape means scann the input and put it in the adress assigned to the variable shape;*/
 	if(shape[0] == 's' || shape[0] == 'S')
 	{
 		printf("\nEnter the length of the side of the square : ");
