@@ -6,7 +6,7 @@ long reverse(long num)
     digit = num % 10;
     newnum = num / 10;
     printf("%ld", digit);
-    return newnum;
+    return digit,newnum;
 }
 
 int main()
