@@ -4,6 +4,6 @@ int main()
     /*Pointer is a kind of variable which stores the adress of other variables.*/
     int age = 10;
     int *pAge = &age;
-    printf("%p %d %d",&age, age, *pAge);
+    printf("%d", *pAge);
     return 0; 
 }
