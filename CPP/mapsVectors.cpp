@@ -3,11 +3,17 @@
 #include <map>
 #include <unordered_map>
 
+using std :: cin;
+using std :: cout;
+using std :: endl;
+using std :: vector;
+using std :: unordered_map;
+
 std :: vector<int> find(std::vector<int> nums,int target)
 {
     int i,b;
-    std::unordered_map<int,int> storeNum;
-    std :: vector<int> solution;
+    unordered_map<int,int> storeNum;
+    vector<int> solution;
     for(i = 0; i < nums.size(); i++)
     {
         storeNum.insert({nums[i],i});
@@ -25,18 +31,18 @@ std :: vector<int> find(std::vector<int> nums,int target)
 
 int main()
 {
-    std :: vector<int> nums = {2,3,4,5,6,7,8,19};
+    vector<int> nums = {2,3,4,5,6,7,8,19};
     int target = 21;
-    std::vector<int> solution = find(nums,target);
+    vector<int> solution = find(nums,target);
     for(int i = 0; i <= solution.size(); i++)
     {
         if(i % 2 == 0)
         {
-            std :: cout << solution[i] << " ";
+            cout << solution[i] << " ";
         }
         else
         {
-            std :: cout << solution[i] << std :: endl;
+            cout << solution[i] << endl;
         }
     }
     return 0;
