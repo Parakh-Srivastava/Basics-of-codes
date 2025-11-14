@@ -3,13 +3,9 @@
 #include <map>
 #include <unordered_map>
 
-using std :: cin;
-using std :: cout;
-using std :: endl;
-using std :: vector;
-using std :: unordered_map;
+using namespace std;
 
-std :: vector<int> find(std::vector<int> nums,int target)
+vector<int> find(vector<int> nums,int target)
 {
     int i,b;
     unordered_map<int,int> storeNum;
