@@ -1,6 +1,10 @@
 body { 
     font-family: Arial, sans-serif; margin: 2rem; 
 }
+h1{
+    display: grid;
+    place-items: center;
+}
 label { 
     display: block; margin: .5rem 0 .2rem; 
 }
