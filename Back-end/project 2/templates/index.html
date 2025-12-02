@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Town Member Check</title>
+    <link rel="stylesheet" href="{{css_path}}">
+  </head>
+  <body>
+    <h1>Are you a member of our town?</h1>
+    <form method="post">
+      <label>Name:
+        <input type="text" name="name" required>
+      </label>
+      <label>House number:
+        <input type="number" name="house_number" min="1" required>
+      </label>
+      <button type="submit">Check</button>
+    </form>
+
+    {% if result is not none %}
+      <p class="{{ 'ok' if result else 'nok' }}">
+        {% if result %}
+          ✅ You are a registered member of the town!
+        {% else %}
+          ❌ Sorry, we could not find you in the town register.
+        {% endif %}
+      </p>
+    {% endif %}
+  </body>
+</html>
