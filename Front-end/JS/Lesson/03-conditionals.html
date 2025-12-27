@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <title>Conditionals</title>
+  </head>
+
+  <script>
+    const randNum = Math.random();
+    let compResponse = ``;
+    if (randNum < 0.33 && randNum >= 0) {
+      compResponse = `Stone`;
+    } else if (randNum < 0.66 && randNum >= 0.33) {
+      compResponse = `Paper`;
+    } else if (randNum < 1 && randNum >= 0.66) {
+      compResponse = `Scissor`;
+    }
+    function Game(playerResponse) {
+      if (
+        (playerResponse === `Stone` && compResponse === `Paper`) ||
+        (playerResponse === `Paper` && compResponse === `Scissor`) ||
+        (playerResponse === `Scissor` && compResponse === `Stone`)
+      ) {
+        alert(`Computer chose : ${compResponse}\n You lose!!`);
+      } else if (playerResponse === compResponse) {
+        alert(`Computer chose : ${compResponse}\n Draw`);
+      } else {
+        alert(`Computer chose : ${compResponse}\n You Win!!`);
+      }
+    }
+  </script>
+
+  <body>
+    <div class="col-6 mt-5 mx-auto gap-3">
+      <button class="btn btn-primary mx-3 col-3 p-4" onclick="Game(`Stone`)">
+        Stone
+      </button>
+      <buttton class="btn btn-dark mx-3 col-3 p-4" onclick="Game(`Paper`)"
+        >Paper</buttton
+      >
+      <button class="btn btn-danger mx-3 col-3 p-4" onclick="Game(`Scissor`)">
+        Scissor
+      </button>
+    </div>
+  </body>
+</html>
